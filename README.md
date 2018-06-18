@@ -1,1 +1,4 @@
-# Traffic Signal Controller Project (Using DSRC)
+# Connected Vehicle Environment Prototype Project
+
+
+![alt text](system.bmp)
