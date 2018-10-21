@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@android:color/background_light"
+    android:id="@+id/layout"
+    tools:context="com.cucvt.mdmhafi.cvdemoapp.MainActivity">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:id="@+id/top_bar"
+        android:background="@android:color/black"
+        />
+
+    <!--
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_below="@+id/txMSignale"
+        android:background="@android:color/black"
+        android:id="@+id/barSignal"
+    />
+-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="No Data!"
+
+        android:id="@+id/txMSignale"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:gravity="fill_vertical|center_horizontal"
+        android:textSize="70dp"
+        android:background="#00ff00"
+        android:layout_marginTop="20dp"
+        android:visibility="visible"
+        android:layout_below="@+id/top_bar" />
+    <!--
+        <View
+            android:id="@+id/barMessage"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_below="@+id/txMessage"
+            android:background="@android:color/black"
+            />
+    -->
+
+    <LinearLayout
+        android:id="@+id/LinearLayout02"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/btConnect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" android:text="connect to\nSERVER">
+        </Button>
+        <Button
+            android:id="@+id/btOBU"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="connect to\nOBU">
+        </Button>
+    </LinearLayout>
+    <!--
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CONNECT TO SERVER"
+        android:id="@+id/btConnect"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Connect to OBU"
+        android:id="@+id/btOBU"
+        android:layout_above="@+id/btConnect"
+        android:layout_centerHorizontal="true" />
+-->
+</RelativeLayout>
